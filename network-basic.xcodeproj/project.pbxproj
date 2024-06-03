@@ -13,6 +13,12 @@
 		C461968B2C0D417F007D3B6B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C461968A2C0D417F007D3B6B /* Base */; };
 		C461968D2C0D4180007D3B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C461968C2C0D4180007D3B6B /* Assets.xcassets */; };
 		C46196902C0D4180007D3B6B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C461968F2C0D4180007D3B6B /* Base */; };
+		C46196992C0D42F1007D3B6B /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196972C0D42F1007D3B6B /* BasicTableViewCell.swift */; };
+		C461969A2C0D42F1007D3B6B /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46196982C0D42F1007D3B6B /* BasicTableViewCell.xib */; };
+		C461969D2C0D458F007D3B6B /* ReuseableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C461969C2C0D458F007D3B6B /* ReuseableProtocol.swift */; };
+		C46196A12C0D57E3007D3B6B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196A02C0D57E3007D3B6B /* UIColor+Extension.swift */; };
+		C46196A32C0D5A39007D3B6B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196A22C0D5A39007D3B6B /* UserViewController.swift */; };
+		C46196A62C0D5F32007D3B6B /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196A52C0D5F31007D3B6B /* AddEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		C461968C2C0D4180007D3B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C461968F2C0D4180007D3B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C46196912C0D4180007D3B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46196972C0D42F1007D3B6B /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
+		C46196982C0D42F1007D3B6B /* BasicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
+		C461969C2C0D458F007D3B6B /* ReuseableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableProtocol.swift; sourceTree = "<group>"; };
+		C46196A02C0D57E3007D3B6B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C46196A22C0D5A39007D3B6B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		C46196A52C0D5F31007D3B6B /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		C46196822C0D417F007D3B6B /* network-basic */ = {
 			isa = PBXGroup;
 			children = (
+				C461969E2C0D4594007D3B6B /* Protocol */,
+				C461969F2C0D57D7007D3B6B /* Extension */,
+				C46196A42C0D5F12007D3B6B /* Controller */,
+				C461969B2C0D42F8007D3B6B /* Cell */,
 				C46196832C0D417F007D3B6B /* AppDelegate.swift */,
 				C46196852C0D417F007D3B6B /* SceneDelegate.swift */,
-				C46196872C0D417F007D3B6B /* ViewController.swift */,
 				C46196892C0D417F007D3B6B /* Main.storyboard */,
 				C461968C2C0D4180007D3B6B /* Assets.xcassets */,
 				C461968E2C0D4180007D3B6B /* LaunchScreen.storyboard */,
 				C46196912C0D4180007D3B6B /* Info.plist */,
 			);
 			path = "network-basic";
+			sourceTree = "<group>";
+		};
+		C461969B2C0D42F8007D3B6B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C46196972C0D42F1007D3B6B /* BasicTableViewCell.swift */,
+				C46196982C0D42F1007D3B6B /* BasicTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C461969E2C0D4594007D3B6B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C461969C2C0D458F007D3B6B /* ReuseableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C461969F2C0D57D7007D3B6B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C46196A02C0D57E3007D3B6B /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C46196A42C0D5F12007D3B6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C46196872C0D417F007D3B6B /* ViewController.swift */,
+				C46196A22C0D5A39007D3B6B /* UserViewController.swift */,
+				C46196A52C0D5F31007D3B6B /* AddEditViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C461969A2C0D42F1007D3B6B /* BasicTableViewCell.xib in Resources */,
 				C461968D2C0D4180007D3B6B /* Assets.xcassets in Resources */,
 				C46196902C0D4180007D3B6B /* Base in Resources */,
 				C461968B2C0D417F007D3B6B /* Base in Resources */,
@@ -138,8 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46196A32C0D5A39007D3B6B /* UserViewController.swift in Sources */,
+				C46196992C0D42F1007D3B6B /* BasicTableViewCell.swift in Sources */,
 				C46196882C0D417F007D3B6B /* ViewController.swift in Sources */,
 				C46196842C0D417F007D3B6B /* AppDelegate.swift in Sources */,
+				C46196A62C0D5F32007D3B6B /* AddEditViewController.swift in Sources */,
+				C46196A12C0D57E3007D3B6B /* UIColor+Extension.swift in Sources */,
+				C461969D2C0D458F007D3B6B /* ReuseableProtocol.swift in Sources */,
 				C46196862C0D417F007D3B6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,11 +351,13 @@
 				DEVELOPMENT_TEAM = 95Z2W8U6PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "network-basic/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "네트워크";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +365,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junehee.network-basic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,11 +385,13 @@
 				DEVELOPMENT_TEAM = 95Z2W8U6PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "network-basic/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "네트워크";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +399,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junehee.network-basic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
