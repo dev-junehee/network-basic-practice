@@ -19,6 +19,13 @@
 		C46196A12C0D57E3007D3B6B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196A02C0D57E3007D3B6B /* UIColor+Extension.swift */; };
 		C46196A32C0D5A39007D3B6B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196A22C0D5A39007D3B6B /* UserViewController.swift */; };
 		C46196A62C0D5F32007D3B6B /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196A52C0D5F31007D3B6B /* AddEditViewController.swift */; };
+		C46196C12C0E9910007D3B6B /* FrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196C02C0E9910007D3B6B /* FrameViewController.swift */; };
+		C46196C32C0EA264007D3B6B /* ConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196C22C0EA264007D3B6B /* ConstraintsViewController.swift */; };
+		C46196C62C0EB1C2007D3B6B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C46196C52C0EB1C2007D3B6B /* SnapKit */; };
+		C46196C82C0EB311007D3B6B /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196C72C0EB311007D3B6B /* SnapViewController.swift */; };
+		C46196CA2C0EBC17007D3B6B /* Snap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196C92C0EBC17007D3B6B /* Snap2ViewController.swift */; };
+		C46196CD2C0EED59007D3B6B /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196CC2C0EED59007D3B6B /* LottoViewController.swift */; };
+		C46196D02C0EEDB7007D3B6B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C46196CF2C0EEDB7007D3B6B /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,11 @@
 		C46196A02C0D57E3007D3B6B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C46196A22C0D5A39007D3B6B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		C46196A52C0D5F31007D3B6B /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		C46196C02C0E9910007D3B6B /* FrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameViewController.swift; sourceTree = "<group>"; };
+		C46196C22C0EA264007D3B6B /* ConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsViewController.swift; sourceTree = "<group>"; };
+		C46196C72C0EB311007D3B6B /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		C46196C92C0EBC17007D3B6B /* Snap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2ViewController.swift; sourceTree = "<group>"; };
+		C46196CC2C0EED59007D3B6B /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46196C62C0EB1C2007D3B6B /* SnapKit in Frameworks */,
+				C46196D02C0EEDB7007D3B6B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,8 @@
 		C46196822C0D417F007D3B6B /* network-basic */ = {
 			isa = PBXGroup;
 			children = (
+				C46196CB2C0EED3B007D3B6B /* Network */,
+				C46196BF2C0E98BD007D3B6B /* Codebase */,
 				C461969E2C0D4594007D3B6B /* Protocol */,
 				C461969F2C0D57D7007D3B6B /* Extension */,
 				C46196A42C0D5F12007D3B6B /* Controller */,
@@ -117,6 +133,25 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		C46196BF2C0E98BD007D3B6B /* Codebase */ = {
+			isa = PBXGroup;
+			children = (
+				C46196C02C0E9910007D3B6B /* FrameViewController.swift */,
+				C46196C22C0EA264007D3B6B /* ConstraintsViewController.swift */,
+				C46196C72C0EB311007D3B6B /* SnapViewController.swift */,
+				C46196C92C0EBC17007D3B6B /* Snap2ViewController.swift */,
+			);
+			path = Codebase;
+			sourceTree = "<group>";
+		};
+		C46196CB2C0EED3B007D3B6B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C46196CC2C0EED59007D3B6B /* LottoViewController.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +168,10 @@
 			dependencies = (
 			);
 			name = "network-basic";
+			packageProductDependencies = (
+				C46196C52C0EB1C2007D3B6B /* SnapKit */,
+				C46196CF2C0EEDB7007D3B6B /* Alamofire */,
+			);
 			productName = "network-basic";
 			productReference = C46196802C0D417F007D3B6B /* network-basic.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +200,10 @@
 				Base,
 			);
 			mainGroup = C46196772C0D417F007D3B6B;
+			packageReferences = (
+				C46196C42C0EB1C1007D3B6B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C46196CE2C0EEDB7007D3B6B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C46196812C0D417F007D3B6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,11 +235,16 @@
 				C46196A32C0D5A39007D3B6B /* UserViewController.swift in Sources */,
 				C46196992C0D42F1007D3B6B /* BasicTableViewCell.swift in Sources */,
 				C46196882C0D417F007D3B6B /* ViewController.swift in Sources */,
+				C46196CA2C0EBC17007D3B6B /* Snap2ViewController.swift in Sources */,
+				C46196C82C0EB311007D3B6B /* SnapViewController.swift in Sources */,
+				C46196C12C0E9910007D3B6B /* FrameViewController.swift in Sources */,
 				C46196842C0D417F007D3B6B /* AppDelegate.swift in Sources */,
 				C46196A62C0D5F32007D3B6B /* AddEditViewController.swift in Sources */,
 				C46196A12C0D57E3007D3B6B /* UIColor+Extension.swift in Sources */,
 				C461969D2C0D458F007D3B6B /* ReuseableProtocol.swift in Sources */,
 				C46196862C0D417F007D3B6B /* SceneDelegate.swift in Sources */,
+				C46196CD2C0EED59007D3B6B /* LottoViewController.swift in Sources */,
+				C46196C32C0EA264007D3B6B /* ConstraintsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +479,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C46196C42C0EB1C1007D3B6B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		C46196CE2C0EEDB7007D3B6B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C46196C52C0EB1C2007D3B6B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C46196C42C0EB1C1007D3B6B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C46196CF2C0EEDB7007D3B6B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C46196CE2C0EEDB7007D3B6B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C46196782C0D417F007D3B6B /* Project object */;
 }

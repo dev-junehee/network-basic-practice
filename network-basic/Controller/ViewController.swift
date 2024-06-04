@@ -45,8 +45,11 @@ class ViewController: UIViewController {
     }
     
     func configureBarButtonItem() {
-        let item = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(plusButtonClicked))
-        navigationItem.rightBarButtonItem = item
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(plusButtonClicked))
+        let leftItem = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(starButtonClicked))
+        
+        navigationItem.rightBarButtonItem = rightItem
+        navigationItem.leftBarButtonItem = leftItem
     }
 
     func configureTableView() {
@@ -68,6 +71,17 @@ class ViewController: UIViewController {
         vc.type = .add
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true)
+    }
+    
+    @objc func starButtonClicked() {
+//        let vc = FrameViewController()
+//        let vc = ConstraintsViewController()
+//        let vc = SnapViewController()
+//        let vc = Snap2ViewController()
+        let vc = LottoViewController()
+        
+//        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
