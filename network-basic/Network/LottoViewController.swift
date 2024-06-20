@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Alamofire
 
 /**
 todo 1 : Response 값(string)을 어떻게 화면에 띄우지? (Decoding)
@@ -20,7 +19,7 @@ struct Lotto: Decodable {
 
 class LottoViewController: UIViewController {
     
-    let lottoURL = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=1122"
+    
     let movieURL = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20231206"
     let coinURL = "https://api.upbit.com/v1/market/all"
 
@@ -29,23 +28,10 @@ class LottoViewController: UIViewController {
         view.backgroundColor = .systemBackground
         
         print("1111111111")
-        AF.request(lottoURL).responseDecodable(of: Lotto.self) { res in
-            switch res.result {
-            case .success(let value):
-                print(value.drwNoDate)
-            case .failure(let error):
-                print(error)
-            }
-        }
         
-//        AF.request(lottoURL).responseString { res in
-//            switch res.result {
-//            case .success(let value):
-//                print(value)
-//            case .failure(let error):
-//                print(error)
-//            }
-//        }
+        NetworkManager.shared.getLotto(query: "1105") { res in
+            print(res)
+        }
         
         print("2222222222")
     }

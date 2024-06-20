@@ -26,6 +26,7 @@
 		C46196CA2C0EBC17007D3B6B /* Snap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196C92C0EBC17007D3B6B /* Snap2ViewController.swift */; };
 		C46196CD2C0EED59007D3B6B /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46196CC2C0EED59007D3B6B /* LottoViewController.swift */; };
 		C46196D02C0EEDB7007D3B6B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C46196CF2C0EEDB7007D3B6B /* Alamofire */; };
+		C47479F42C24037B00D421D7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47479F32C24037B00D421D7 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C46196C72C0EB311007D3B6B /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		C46196C92C0EBC17007D3B6B /* Snap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2ViewController.swift; sourceTree = "<group>"; };
 		C46196CC2C0EED59007D3B6B /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		C47479F32C24037B00D421D7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				C461968C2C0D4180007D3B6B /* Assets.xcassets */,
 				C461968E2C0D4180007D3B6B /* LaunchScreen.storyboard */,
 				C46196912C0D4180007D3B6B /* Info.plist */,
+				C47479F32C24037B00D421D7 /* Network.swift */,
 			);
 			path = "network-basic";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				C461969D2C0D458F007D3B6B /* ReuseableProtocol.swift in Sources */,
 				C46196862C0D417F007D3B6B /* SceneDelegate.swift in Sources */,
 				C46196CD2C0EED59007D3B6B /* LottoViewController.swift in Sources */,
+				C47479F42C24037B00D421D7 /* Network.swift in Sources */,
 				C46196C32C0EA264007D3B6B /* ConstraintsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
